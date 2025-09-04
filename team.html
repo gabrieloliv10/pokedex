@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Time</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="index.html">Pokédex</a>
+      <a href="team.html">Meu Time</a>
+    </nav>
+  </header>
+
+  <!-- Lista do Time -->
+  <main id="team-list">
+    <!-- Cards dos Pokémons serão renderizados aqui -->
+  </main>
+
+  <!-- Modal para detalhes do Pokémon -->
+  <div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-name"></h2>
+      <img id="modal-img" src="" alt="">
+      <p id="modal-types"></p>
+      <p id="modal-stats"></p>
+      <button id="toggle-shiny">Ver Shiny</button>
+      <button id="add-team">Adicionar ao Time</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="js/team.js"></script>
+</body>
+</html>

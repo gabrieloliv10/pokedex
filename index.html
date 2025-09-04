@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <nav>
+    <a href="index.html">
+      <img src="img/logopokemon.png" alt="Pokédex" style="height: 60px;">
+    </a>
+    <a href="team.html">Meu Time</a>
+  </nav>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Buscar Pokémon...">
+  </div>
+</header>
+
+  <main id="pokemon-list">
+    <!-- Aqui os pokémons vão aparecer -->
+  </main>
+
+  <!-- Modal -->
+  <div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-name"></h2>
+      <img id="modal-img" src="" alt="">
+      <p id="modal-types"></p>
+      <p id="modal-stats"></p>
+      <button id="toggle-shiny">Ver Shiny</button>
+      <button id="add-team">Adicionar ao Time</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

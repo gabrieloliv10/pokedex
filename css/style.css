@@ -1,0 +1,178 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background-color: #ef5350; /* vermelho pokebola */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Grid dos pokémons */
+#pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.sprites {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sprites div {
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px; right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Modal - imagem maior */
+#pokemon-modal .modal-content img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* Modal - botões maiores */
+#pokemon-modal .modal-content button {
+  padding: 12px 28px;
+  font-size: 1.1em;
+  margin: 10px 8px 0 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #8eb0dd;
+  color: #000000;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#pokemon-modal .modal-content button:hover {
+  background-color: #0eedf5;
+}
+/* Header mais profissional */
+header {
+  background-color: #f02e2e;
+  padding: 20px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav a {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 0;
+}
+
+header nav img {
+  display: block;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+#search {
+  width: 350px;
+  padding: 14px 18px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
