@@ -31,4 +31,4 @@ A aba "Meu Time" exibe os Pokémon que você selecionou.
 
 ## Código-fonte
 
-O projeto foi desenvolvido em JavaScript, HTML
+O projeto foi desenvolvido em JavaScript, HTML e CSS
